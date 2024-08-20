@@ -1,0 +1,95 @@
+/* Existing styles */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* New styles */
+
+body {
+  background-color: #f4f5f7;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+button {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  height: 300px;
+}
+
+.flex.justify-center {
+  margin-top: 0; /* No space above buttons */
+  margin-bottom: 0; /* Optional: No space below if necessary */
+}
+
+/* Adjusting padding inside the form container if necessary */
+.form-inner {
+  padding: 1px; /* Adjust padding to be smaller if it's still too large */
+}
+
+.header-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Spreads out the child elements */
+}
+
+.logout-button {
+  margin-left: auto; /* Pushes the logout button to the right */
+  color: red;
+}

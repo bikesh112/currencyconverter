@@ -1,0 +1,7 @@
+numpy
+scikit-learn
+MetaTrader5
+django
+djangorestframework
+numpy<2
+django-cors-headers

@@ -1,0 +1,21 @@
+Steps: 
+-- Install the mt5 setup file
+
+Install for django backend:
+cd currencyproject
+pip install -r requirements.txt
+
+Run the django backend
+in currnode path run: python manage.py runserver
+
+Install libraries for frontend:
+npm i -f
+
+Run django frontend: 
+npm start
+
+
+login: 
+testuser
+testuserpassword
+

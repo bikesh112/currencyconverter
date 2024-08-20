@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Project</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'currencyapp/css/chartview.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+    <h1>Foreign Currency Exchange Helper</h1>
+    <form id="rates-form">
+        <label for="ticker">Ticker:</label>
+        <select id="ticker" name="ticker" required></select>
+        <label for="interval">Interval:</label>
+        <select id="interval" name="interval" required></select>
+        <label for="no_of_rows">Number of Rows:</label>
+        <select id="no_of_rows" name="no_of_rows" required>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+        </select>
+        <button type="submit">Get Rates</button>
+    </form>
+    <canvas id="ratesChart" width="400" height="200"></canvas>
+
+    <script src="{% static 'currencyapp/js/chartview.js' %}"></script>
+</body>
+</html>
